@@ -4,5 +4,6 @@ ROS 2 package `robot_interfaces`: custom messages shared by the controller (ESP3
 
 | Message | Topic | Direction |
 | --- | --- | --- |
-| `Command` | Comando | RPi → ESP32, 20 Hz |
-| `State` | Estado | ESP32 → RPi, 100 Hz |
+| `Command` | `/controller/command` | RPi → ESP32, 20 Hz |
+| `State` | `/controller/state` | ESP32 → RPi, 100 Hz |
+| `Instrumentation` | `/controller/instrumentation` | ESP32 → RPi, 10 Hz (ADR 028) |
